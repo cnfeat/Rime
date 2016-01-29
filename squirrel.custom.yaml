@@ -1,0 +1,29 @@
+patch:
+  style:
+    alpha: 0.9 
+      # 透明度
+    border_width: 1
+    border_height: 1
+    line_spacing: 5
+    color_scheme: waterblue
+  preset_color_schemes: 
+    waterblue:
+      name: "水蓝/waterblue"
+      author: "cnfeat <cnfeat@gmail.com>"
+      back_color: 0xeeffffff
+      border_height: 3
+      border_width: 6
+      candidate_format: "%c %@ "
+      comment_text_color: 0xeeffffff
+      candidate_text_color: 0x666666
+      corner_radius: 2
+      font_point: 17
+      hilited_candidate_back_color: 0xF2ECDE
+      hilited_candidate_label_color: 0xaaaaaa
+      hilited_candidate_text_color: 0x000000
+      horizontal: false
+      label_color: 0xaaaaaa
+      label_font_point: 17
+  app_options:
+    com.runningwithcrayons.Alfred-2:
+      ascii_mode: false
