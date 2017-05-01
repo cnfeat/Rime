@@ -12,6 +12,5 @@ patch:
   recognizer/patterns/rime123: "^rime[0-9]+$"
   recognizer/patterns/rimeime: "^rimeime[-_.0-9]*$"
 punctuator:
-  half_shape:
-    "[": {pair: ["【", "】"]}
-    "'": {pair: ["`", "`"]}
+  full_shape:
+    '[' : { pair: [ '【', '】' ] }

@@ -1,0 +1,5 @@
+2017/05/02-00:09:15.290987 7fffaedcf3c0 Recovering log #1009
+2017/05/02-00:09:15.299265 7fffaedcf3c0 Level-0 table #1012: started
+2017/05/02-00:09:15.301566 7fffaedcf3c0 Level-0 table #1012: 148700 bytes OK
+2017/05/02-00:09:15.303285 7fffaedcf3c0 Delete type=0 #1009
+2017/05/02-00:09:15.303645 7fffaedcf3c0 Delete type=3 #1007
