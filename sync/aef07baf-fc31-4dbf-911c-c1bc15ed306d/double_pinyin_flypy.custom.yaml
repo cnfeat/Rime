@@ -1,4 +1,0 @@
-# double_pinyin_flypy.custom.yaml, 只对小鹤双拼生效
-patch:
-  translator/preedit_format: {}     # 输入双拼码的时候不转化为全拼码
-
