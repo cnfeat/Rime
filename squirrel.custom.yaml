@@ -252,6 +252,6 @@ patch:
       name: "星際我爭霸／StarCraft"
       text_color: 0xccaa88
 
-  "app_options/com.runningwithcrayons.Alfred-3/ascii_mode": true
-  "com.sublimetext.3/ascii_mode": true
+  "app_options/com.runningwithcrayons.Alfred-3/ascii_mode": false
+  "com.sublimetext.3/ascii_mode": false
   "com.apple.Finder/ascii_mode": true

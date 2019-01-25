@@ -2,20 +2,20 @@ __build_info:
   rime_version: 1.4.0
   timestamps:
     default: 1548171029
-    default.custom: 1548341330
+    default.custom: 1548422096
     key_bindings: 1548171029
     key_bindings.custom: 0
     punctuation: 1548171029
     punctuation.custom: 0
 ascii_composer:
-  good_old_caps_lock: false
+  good_old_caps_lock: true
   switch_key:
     Caps_Lock: commit_code
-    Control_L: noop
-    Control_R: noop
+    Control_L: commit_text
+    Control_R: commit_text
     Eisu_toggle: clear
-    Shift_L: noop
-    Shift_R: commit_text
+    Shift_L: inline_ascii
+    Shift_R: inline_ascii
 config_version: 0.40
 key_binder:
   bindings:
@@ -30,12 +30,11 @@ key_binder:
     - {accept: "Control+h", send: BackSpace, when: composing}
     - {accept: "Control+g", send: Escape, when: composing}
     - {accept: "Control+bracketleft", send: Escape, when: composing}
-    - {accept: "Alt+v", send: Page_Up, when: composing}
-    - {accept: "Control+v", send: Page_Down, when: composing}
+    - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
     - {accept: "Shift+Tab", send: Page_Up, when: composing}
     - {accept: Tab, send: Page_Down, when: composing}
-    - {accept: minus, send: Page_Up, when: has_menu}
-    - {accept: equal, send: Page_Down, when: has_menu}
+    - {accept: bracketleft, send: Page_Up, when: paging}
+    - {accept: bracketright, send: Page_Down, when: has_menu}
 menu:
   page_size: 5
 punctuator:
@@ -119,7 +118,8 @@ switcher:
   caption: "〔方案選單〕"
   fold_options: true
   hotkeys:
-    - F4
+    - "Control+grave"
+    - "Control+Shift+grave"
   option_list_separator: "／"
   save_options:
     - full_shape

@@ -2,8 +2,8 @@ __build_info:
   rime_version: 1.4.0
   timestamps:
     default: 1548171029
-    default.custom: 1548341330
-    double_pinyin_flypy.custom: 1548341701
+    default.custom: 1548422096
+    double_pinyin_flypy.custom: 1548421118
     double_pinyin_flypy.schema: 1547769028
     key_bindings: 1548171029
     key_bindings.custom: 0
@@ -54,12 +54,11 @@ key_binder:
     - {accept: "Control+h", send: BackSpace, when: composing}
     - {accept: "Control+g", send: Escape, when: composing}
     - {accept: "Control+bracketleft", send: Escape, when: composing}
-    - {accept: "Alt+v", send: Page_Up, when: composing}
-    - {accept: "Control+v", send: Page_Down, when: composing}
+    - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
     - {accept: "Shift+Tab", send: Page_Up, when: composing}
     - {accept: Tab, send: Page_Down, when: composing}
-    - {accept: minus, send: Page_Up, when: has_menu}
-    - {accept: equal, send: Page_Down, when: has_menu}
+    - {accept: bracketleft, send: Page_Up, when: paging}
+    - {accept: bracketright, send: Page_Down, when: has_menu}
   import_preset: default
 menu:
   page_size: 5

@@ -3,15 +3,16 @@ patch:
     - schema: double_pinyin_flypy
     - schema: luna_pinyin_simp
   switcher/hotkeys:
-    - F4
+    - "Control+grave"       
+    - "Control+Shift+grave"  
   menu/page_size: 5
   ascii_composer:
-    good_old_caps_lock: false
+    good_old_caps_lock: true
     switch_key:
-      Shift_L: noop
-      Shift_R: commit_text
-      Control_L: noop
-      Control_R: noop
+      Shift_L: inline_ascii
+      Shift_R: inline_ascii
+      Control_L: commit_text
+      Control_R: commit_text
       Caps_Lock: commit_code
       Eisu_toggle: clear
   key_binder/bindings:
@@ -26,13 +27,15 @@ patch:
     - {accept: "Control+h", send: BackSpace, when: composing}
     - {accept: "Control+g", send: Escape, when: composing}
     - {accept: "Control+bracketleft", send: Escape, when: composing}
-    - {accept: "Alt+v", send: Page_Up, when: composing}
-    - {accept: "Control+v", send: Page_Down, when: composing}
-    # - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
+    # - {accept: "Alt+v", send: Page_Up, when: composing}
+    # - {accept: "Control+v", send: Page_Down, when: composing}
+    - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
     - {accept: "Shift+Tab", send: Page_Up, when: composing}
     - {accept: Tab, send: Page_Down, when: composing}
-    - {accept: minus, send: Page_Up, when: has_menu}
-    - {accept: equal, send: Page_Down, when: has_menu}
+    # - {accept: minus, send: Page_Up, when: has_menu}
+    #- {accept: equal, send: Page_Down, when: has_menu}
+    - {accept: bracketleft, send: Page_Up, when: paging}  
+    - {accept: bracketright, send: Page_Down, when: has_menu}
     # - { when: has_menu, accept: semicolon, send: 2 }
     # - { when: has_menu, accept: apostrophe, send: 3 }
     # - {accept: comma, send: Page_Up, when: paging}

@@ -2,7 +2,7 @@ __build_info:
   rime_version: 1.4.0
   timestamps:
     squirrel: 1548171029
-    squirrel.custom: 1548340208
+    squirrel.custom: 1548419995
 app_options:
   co.zeit.hyper:
     ascii_mode: true
@@ -30,7 +30,7 @@ app_options:
   "com.runningwithcrayons.Alfred-2":
     ascii_mode: true
   "com.runningwithcrayons.Alfred-3":
-    ascii_mode: true
+    ascii_mode: false
   com.sublimetext.2:
     ascii_mode: true
   org.gnu.Aquamacs:
@@ -45,7 +45,7 @@ chord_duration: 0.1
 com.apple.Finder:
   ascii_mode: true
 com.sublimetext.3:
-  ascii_mode: true
+  ascii_mode: false
 config_version: 0.31
 preset_color_schemes:
   apathy:
