@@ -1,0 +1,32 @@
+## Vim ##
+*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+
+## Project ##
+
+*.userdb
+*.bin
+luna_pinyin.custom.*.dict.yaml
+luna_pinyin.custom.*.*.dict.yaml
+custom_phrase.txt
+
+### generated files
+
+squirrel.yaml
+default.yaml
+symbols.yaml
+installation.yaml
+user.yaml
+.place_holder
+build
+sync
+trash
+luna_pinyin.custom.dict.yaml
+*.schema.yaml
+stroke.dict.yaml
+opencc
+emoji_suggestion.yaml
